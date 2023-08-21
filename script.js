@@ -33,7 +33,7 @@ document.getElementById("rating-button").addEventListener("click", function(even
   rating = selectedRating.value; // Assign the value to the rating variable
   const ratingContainer = document.querySelector(".rating-container");
   ratingContainer.style.display = "none";
-  console.log("Selected Rating:", rating);
+  // console.log("Selected Rating:", rating);
 
   if (rating == "regular" || rating == "bad") {
     feedbackForm.style.display = "block";
@@ -46,8 +46,8 @@ document.getElementById("feedback-submit").addEventListener("click", function(ev
   event.preventDefault();
   feedbackForm.style.display = "none";
   recommendContainer.style.display = "block";
-  //console.log("Feedback Text:", feedbackText.value);
-  //console.log("Photo Files:", photoFilesInput.files);
+  console.log("Feedback Text:", feedbackText.value);
+  console.log("Photo Files:", photoFilesInput.files);
 });
 
 document.getElementById("recommend-button").addEventListener("click", function(event) {
@@ -63,15 +63,15 @@ document.getElementById("recommend-button").addEventListener("click", function(e
   const recommendation = selectedRecommendation.value;
   recommendContainer.style.display = "none";
   
-  //console.log("Selected Recommendation:", recommendation);
-  //console.log("Feedback Data:", {
-  //  name: nameInput.value,
-  //  email: emailInput.value,
-   // rating: rating,
-  //  feedbackText: feedbackText.value,
-   // photos: photoFilesInput.files,
-   // recommendation: recommendation,
-//  });
+  // console.log("Selected Recommendation:", recommendation);
+  // console.log("Feedback Data:", {
+  //   name: nameInput.value,
+  //   email: emailInput.value,
+  //   rating: rating,
+  //   feedbackText: feedbackText.value,
+  //   photos: photoFilesInput.files,
+  //   recommendation: recommendation,
+  // });
   
 
   thankYouMessage.style.display = "block";
